@@ -1,0 +1,29 @@
+// mobile grids
+
+@media (min-width: 0px){
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+            "inicio inicio"
+            "nosotros nosotros"
+            "importaciones importaciones"
+            "contacto contacto";
+
+        .inicio{
+            grid-area: inicio;
+        }
+
+        .nosotros{
+            grid-area: nosotros;
+        }
+
+        .importaciones{
+            grid-area: importaciones;
+        }
+
+        .contacto{
+            grid-area: contacto;
+        }
+    }
+}

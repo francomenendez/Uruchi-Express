@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  background-color: aqua;
+}
+
+footer {
+  background-color: darkmagenta;
+}
+
+@media (min-width: 0px) {
+  main {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "inicio inicio" "nosotros nosotros" "importaciones importaciones" "contacto contacto";
+  }
+  main .inicio {
+    grid-area: inicio;
+  }
+  main .nosotros {
+    grid-area: nosotros;
+  }
+  main .importaciones {
+    grid-area: importaciones;
+  }
+  main .contacto {
+    grid-area: contacto;
+  }
+}
+@media (min-width: 0px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(19, 18, 18, 0.5);
+    opacity: 1;
+  }
+  header .navlogo a {
+    width: 50%;
+  }
+  header .navsections a {
+    font-family: "mulish";
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .navbar {
+    display: grid;
+    grid-template-areas: "logo" "sections";
+  }
+  .navbar .navlogo {
+    grid-area: "logo";
+    display: flex;
+    justify-content: center;
+  }
+  .navbar .navsections {
+    grid-area: "sections";
+  }
+  .navbar .navsections ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 481px) {
+  header .navsections a {
+    font-family: "mulish";
+    color: white;
+    text-decoration: none;
+    font-size: 1.65em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: 768px) {
+  header .navlogo a {
+    width: 40%;
+  }
+  header .navsections li {
+    padding: 10px;
+  }
+  header .navsections li a {
+    font-family: "mulish";
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .navbar {
+    display: grid;
+    grid-template-areas: "logo sections sections sections";
+  }
+  .navbar .navlogo {
+    grid-area: "logo";
+    display: flex;
+    justify-content: center;
+  }
+  .navbar .navsections {
+    grid-area: "sections";
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar .navsections ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  header .navlogo a {
+    width: 35%;
+    margin-left: 20%;
+  }
+  header .navsections li {
+    padding: 10px;
+  }
+  header .navsections li a {
+    font-family: "mulish";
+    color: white;
+    text-decoration: none;
+    font-size: 2.2em;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .navbar {
+    display: grid;
+    grid-template-areas: "logo sections sections";
+  }
+  .navbar .navlogo {
+    grid-area: "logo";
+    display: flex;
+    justify-content: flex-start;
+  }
+  .navbar .navsections {
+    grid-area: "sections";
+    display: flex;
+  }
+  .navbar .navsections ul {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
