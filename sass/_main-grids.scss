@@ -1,7 +1,10 @@
 // mobile grids
 
 @media (min-width: 0px){
-    main{
+
+    // grid general
+
+    .gridContainer{
         width: 100%;
         display: grid;
         grid-template-areas: 
@@ -26,4 +29,7 @@
             grid-area: contacto;
         }
     }
+
+
+    // flexbox
 }

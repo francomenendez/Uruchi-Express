@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -18,30 +20,22 @@ img {
   width: 100%;
 }
 
-main {
-  background-color: aqua;
-}
-
-footer {
-  background-color: darkmagenta;
-}
-
 @media (min-width: 0px) {
-  main {
+  .gridContainer {
     width: 100%;
     display: grid;
     grid-template-areas: "inicio inicio" "nosotros nosotros" "importaciones importaciones" "contacto contacto";
   }
-  main .inicio {
+  .gridContainer .inicio {
     grid-area: inicio;
   }
-  main .nosotros {
+  .gridContainer .nosotros {
     grid-area: nosotros;
   }
-  main .importaciones {
+  .gridContainer .importaciones {
     grid-area: importaciones;
   }
-  main .contacto {
+  .gridContainer .contacto {
     grid-area: contacto;
   }
 }
@@ -52,14 +46,19 @@ footer {
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: rgba(19, 18, 18, 0.5);
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.877);
+  }
+  header .navbar {
+    padding: 4px;
+  }
+  header .navlogo {
+    margin: 4%;
   }
   header .navlogo a {
     width: 50%;
   }
   header .navsections a {
-    font-family: "mulish";
+    font-family: "mulish", sans-serif;
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -88,7 +87,7 @@ footer {
     font-family: "mulish";
     color: white;
     text-decoration: none;
-    font-size: 1.65em;
+    font-size: 1.35em;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
@@ -103,7 +102,7 @@ footer {
     font-family: "mulish";
     color: white;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.6em;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .navbar {
@@ -130,7 +129,10 @@ footer {
 @media (min-width: 1024px) {
   header .navlogo a {
     width: 35%;
-    margin-left: 20%;
+    margin-left: 15%;
+  }
+  header .navsections {
+    width: 80%;
   }
   header .navsections li {
     padding: 10px;
@@ -139,7 +141,7 @@ footer {
     font-family: "mulish";
     color: white;
     text-decoration: none;
-    font-size: 2.2em;
+    font-size: 2em;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .navbar {
@@ -158,5 +160,138 @@ footer {
   .navbar .navsections ul {
     display: flex;
     flex-direction: row;
+    width: 100%;
+  }
+}
+main {
+  background-color: white;
+}
+
+@media (min-width: 0px) {
+  .gridContainer .seccion {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .gridContainer .seccion h1 {
+    text-align: center;
+    font-family: "Fugaz One";
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 10px;
+  }
+  .gridContainer .seccion p {
+    padding: 5px;
+    font-family: "roboto";
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media (min-width: 0px) {
+  .thefooter {
+    background-color: rgb(5, 5, 5);
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .thefooter .navfooter {
+    padding: 6px;
+    margin-bottom: 15px;
+    font-family: "roboto", sans-serif;
+    color: white;
+    font-size: 1.4em;
+  }
+  .thefooter .navfooter h3 {
+    margin-left: 2%;
+  }
+  .thefooter .navfooter li {
+    margin: 4px;
+  }
+  .thefooter .navfooter .bi-whatsapp {
+    color: rgb(16, 192, 0);
+  }
+  .thefooter .navfooter .bi-envelope-at-fill {
+    color: rgb(224, 0, 0);
+  }
+  .thefooter .navfooter .bi-facebook {
+    color: rgb(0, 175, 219);
+  }
+  .thefooter .navfooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95em;
+  }
+  .thefooter .barrita {
+    background-color: white;
+    height: 1px;
+    margin: 3px;
+    margin-bottom: 5px;
+  }
+  .thefooter {
+    display: flex;
+    flex-direction: column;
+  }
+  .thefooter .navfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .thefooter .navfooter ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .thefooter .navfooter ul li {
+    display: flex;
+  }
+}
+@media (min-width: 380px) {
+  .thefooter {
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .thefooter .navfooter {
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  .thefooter .navfooter li {
+    margin: 5px;
+  }
+  .thefooter .navfooter a {
+    font-size: 0.95em;
+  }
+  .thefooter .barrita {
+    height: 2px;
+    margin-bottom: 10px;
+  }
+  .thefooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 768px) {
+  .thefooter {
+    padding: 40px;
+  }
+  .thefooter .navfooter {
+    padding: 6px;
+    margin-bottom: 5px;
+    font-size: 1.6em;
+  }
+  .thefooter .navfooter li {
+    margin: 4px;
+  }
+  .thefooter .navfooter a {
+    font-size: 0.9em;
+  }
+  .thefooter .barrita {
+    height: 2.5px;
+    margin-bottom: 10px;
+  }
+  .thefooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=style.css.map */

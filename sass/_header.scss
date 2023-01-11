@@ -3,15 +3,19 @@
 // tamaños, colores y decoración mobile
 
     header {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: rgba(19, 18, 18, 0.5);
-        opacity: 1;
+    background-color: rgba(0, 0, 0, 0.877);
+
+        .navbar{
+            padding: 4px;
+        }
 
         .navlogo{
+            margin: 4%;
             a{
                 width: 50%;
                 }
@@ -19,7 +23,7 @@
     
         .navsections {
             a{
-            font-family: 'mulish';
+            font-family: 'mulish', sans-serif;
             color: white;
             text-decoration: none;
             font-size: 1.2em;
@@ -61,7 +65,7 @@
             font-family: 'mulish';
             color: white;
             text-decoration: none;
-            font-size: 1.65em;
+            font-size: 1.35em;
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             } }
         }  
@@ -88,7 +92,7 @@
                 font-family: 'mulish';
                 color: white;
                 text-decoration: none;
-                font-size: 2em;
+                font-size: 1.6em;
                 text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                 } } }
             }
@@ -126,11 +130,12 @@
             .navlogo{
                 a{
                     width: 35%;
-                    margin-left: 20%;
+                    margin-left: 15%;
                     }
                 }
         
             .navsections {
+                width: 80%;
 
             li{
                 padding: 10px;
@@ -139,7 +144,7 @@
                 font-family: 'mulish';
                 color: white;
                 text-decoration: none;
-                font-size: 2.2em;
+                font-size: 2em;
                 text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                 } } }
             }
@@ -162,6 +167,7 @@
             ul{
                 display: flex; 
                 flex-direction: row;
+                width: 100%;
             }
         }
     }
