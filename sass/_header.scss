@@ -1,174 +1,86 @@
-@media (min-width: 0px) {
-
-// tamaños, colores y decoración mobile
-
-    header {
-    position:fixed;
+header {
+    background-color: $black;
+    padding: 2vw;
+    position: sticky;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.877);
-
-        .navbar{
-            padding: 4px;
-        }
-
-        .navlogo{
-            margin: 4%;
-            a{
-                width: 50%;
-                }
-            }
     
-        .navsections {
+    ul{
+        display: flex; flex-direction: row;
+        justify-content: space-evenly;
+
+        li{
+            font-size: 4vw;
+
             a{
-            font-family: 'mulish', sans-serif;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            } }
-        }  
-
-    // flexbox y posiciones mobile
-
-    .navbar{
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "sections";
-
-        .navlogo{
-            grid-area: "logo";
-            display: flex; justify-content: center;
-        }
-        .navsections{
-            grid-area: "sections";
-            
-            ul{
-                display: flex; flex-direction: row;
-                justify-content: space-around;
+                color: $white;
             }
+        }
+    }
+
+    .logo{
+        display: flex; justify-content: center;
+        margin: 2vw;
+        a{
+            width: 45%;
         }
     }
 }
 
-@media (min-width: 481px) {
-
-    // tamaños, colores y decoración mobile/tablet
-
-    header {
-    
-        .navsections {
-            a{
-            font-family: 'mulish';
-            color: white;
-            text-decoration: none;
-            font-size: 1.35em;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            } }
-        }  
-
-}
-
-@media (min-width: 768px) {
-
-    // tamaños colores y decoración tablet/laptop
-
-    header {
-            .navlogo{
-                a{
-                    width: 40%;
-                    }
-                }
-        
-            .navsections {
-
-            li{
-                padding: 10px;
-
-                a{
-                font-family: 'mulish';
-                color: white;
-                text-decoration: none;
-                font-size: 1.6em;
-                text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                } } }
-            }
-
-    // flexbox y posiciones tablet/laptop
-
-    .navbar{
-        display: grid;
-        grid-template-areas: 
-        "logo sections sections sections";
-
-        .navlogo{
-            grid-area: "logo";
-            display: flex; justify-content: center;
-        }
-        .navsections{
-            grid-area: "sections";
-            display: flex;
-            justify-content: flex-end; 
-            align-items: center;
-            
+@media (min-width: 481px){
+    header{
+        padding: 0.8vw;
             ul{
-                display: flex; flex-direction: column;
+                
+                li{
+                    font-size: 2.5vw;
+                }
+            }
+            .logo{
+                margin-top: 0.1vw;
+                a{
+                    width: 30%;
+                }
+            }
+}}
+
+@media (min-width: 768px){
+    header{
+        padding: 0.1vw;
+        nav{ display: flex; flex-direction: row;
+            ul{ 
+                display: flex;
                 align-items: center;
-            }
-        }
+                justify-content: flex-end;
+                width: 100%;
+                li{
+                    font-size: 2vw;
+                    margin: 1vw;
+                }}
     }
-}
 
-@media (min-width: 1024px) {
-
-    // tamaños colores y decoración desktop
-
-    header {
-            .navlogo{
-                a{
-                    width: 35%;
-                    margin-left: 15%;
-                    }
-                }
-        
-            .navsections {
-                width: 80%;
-
-            li{
-                padding: 10px;
-
-                a{
-                font-family: 'mulish';
-                color: white;
-                text-decoration: none;
-                font-size: 2em;
-                text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                } } }
-            }
-
-    // flexbox y posiciones desktop
-
-    .navbar{
-        display: grid;
-        grid-template-areas: 
-        "logo sections sections";
-
-        .navlogo{
-            grid-area: "logo";
-            display: flex; justify-content: flex-start;
-        }
-        .navsections{
-            grid-area: "sections";
-            display: flex;
-            
-            ul{
-                display: flex; 
-                flex-direction: row;
+        .logo{
+        width: 20%;
+        margin: 1vw;
+        margin-left: 5vw;
+            a{
                 width: 100%;
             }
         }
+    }
+}
+
+@media (min-width: 1024px){
+    header{
+        nav{
+            ul{ 
+                margin-right: 3vw;
+                li{
+                    font-size: 1.2vw;
+                    margin: 1vw;
+                }}
+    }
+
+        
     }
 }

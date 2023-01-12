@@ -1,0 +1,135 @@
+main{
+    .contacto{
+        background-color: $red2;
+        
+        
+        h1{
+            color: $white;
+        }
+
+        form{
+            background-color: $red3;
+            padding: 4vw;
+            border-radius: 1vw;
+            display: flex; flex-direction: column;
+
+            input{
+                padding: 2vw;
+                margin: .5vw;
+                border-radius: 6vw;
+                border-color: $white;
+                background-color: $white;
+            }
+
+            .input-submit{
+                background-color: $red2;
+                color: $white;
+            }
+
+            ::-webkit-input-placeholder {
+                color: $grey;
+                font-size: 4vw;
+                padding: 3vw;
+                font-weight: bold;
+                }
+                ::-moz-placeholder {
+                    color: $grey;
+                    font-size: 4vw;
+                    padding: 3vw;
+                    font-weight: bold;
+                }
+                :-ms-input-placeholder {
+                    color: $grey;
+                    font-size: 4vw;
+                    padding: 3vw;
+                    font-weight: bold;
+                }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main{
+        .contacto{
+            background-color: $white;
+            padding-left: 15vw;
+            padding-right: 15vw;
+            
+            h1{
+                color: $black;
+            }
+    
+            form{
+                background-color: rgb(163, 157, 157);
+                box-shadow: .6vw .6vw 2vw 0.1vw black;
+    
+                input{
+                    padding: 1.5vw;
+                    margin: .5vw;
+                    border-radius: 6vw;
+                }
+    
+                .input-submit{
+                    background-color: $red2;
+                    color: $white;
+                }
+    
+                ::-webkit-input-placeholder {
+                    font-size: 2vw;
+                    padding: 2vw;
+                    }
+                    ::-moz-placeholder {
+                    font-size: 2vw;
+                    padding: 2vw;
+                    }
+                    :-ms-input-placeholder {
+                    font-size: 2vw;
+                    padding: 2vw;
+                    }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        .contacto{
+            background-color: $white;
+            padding-left: 25vw;
+            padding-right: 25vw;
+            margin-bottom: 0.1vw;
+            
+            h1{
+                color: $black;
+                
+            }
+    
+            form{
+                background-color: rgb(163, 157, 157);
+                display: flex; flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+    
+                input{
+                    padding-top: 1.5vw;
+                    padding-bottom: 1.5vw;
+                    width: 45%;
+                }
+    
+                .input-submit{
+                    width: 90%;
+                }
+    
+                ::-webkit-input-placeholder {
+                    font-size: 1.1vw;
+                    }
+                    ::-moz-placeholder {
+                        font-size: 1.1vw;
+                    }
+                    :-ms-input-placeholder {
+                        font-size: 1.1vw;
+                    }
+            }
+        }
+    }
+}

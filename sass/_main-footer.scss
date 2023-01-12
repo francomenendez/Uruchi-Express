@@ -1,0 +1,39 @@
+main{
+    footer{
+        background-color: $grey;
+        padding: 2vw;
+
+        p{
+            font-size: 3.5vw;
+            text-align: center;
+
+            a{
+                color: black;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main{
+        footer{
+            padding: 1.5vw;
+    
+            p{
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main{
+        footer{
+            padding: 1vw;
+    
+            p{
+                font-size: 1vw;
+            }
+        }
+    }
+}

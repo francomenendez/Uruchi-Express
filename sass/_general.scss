@@ -1,24 +1,34 @@
-// reset de toda la página
+// variables de colores
+$black: #0D0D0D;
+$grey: #4d4d4d;
+$white: #F2F2F2;
+$red1: #400101;
+$red2: #8C0303;
+$red3: #F20505;
 
+// reset de toda la página
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'mulish', 'sans-serif';
 }
 
 // valores generales para todas las listas, imagenes , etiquetas y contenidos
 
-html{
-    font-size: 62.5%;
-}
-
-ul{
-    li{
-        text-decoration: none;
-        list-style: none;
-    }
+h1 h2 h3 h4 h5 h6 p a input textarea ul{
+    margin: 0;
+    padding: 0;
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }

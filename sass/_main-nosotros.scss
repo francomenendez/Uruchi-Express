@@ -1,0 +1,37 @@
+main{
+    .nosotros{
+        
+        
+        h1{
+            background-color: $black;
+            color: $white;
+        }
+        
+    }
+}
+
+@media (min-width: 768px) {
+    main{
+
+        .nosotros{
+            h1{
+                color: $black;
+                background-color: $white;
+            }
+
+            section{
+                background-color: rgb(163, 157, 157);
+                box-shadow: .7vw .7vw 2.4vw 0.1vw black;
+                border-radius: 3vw;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+                p{
+                    
+                    color: $black;
+                }
+            }
+
+            
+        }
+    }
+}
